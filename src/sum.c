@@ -18,12 +18,25 @@ int sum (int n)
 /* Sum integers 1 to n */
 int sumtail (int n, int total)
 {
+    assert(n >= 1); //precondition
+    
+    if(n == 1)
+      return 1 + total; //Base case
+    else
+      return sumtail(n - 1, total + n); //Recursive step
     return 0;
 }
 
 /* Sum integers 1 to n */
 int sumwhile (int n)
 {
-  return 0;
+  assert(n >= 1); //precondtition
+
+  int sum = 0; //variable for total sum
+  while(n > 0) {
+    sum += n; //adds n to sum for all numbers from 0 to n in descending order
+    n--;
+  }
+  return sum;
 }
 
