@@ -1,3 +1,4 @@
+/*
 extern "C"{
     // Add the header files required to run your main
     #include "sum.h"
@@ -5,10 +6,11 @@ extern "C"{
     #include "stdio.h"
     #include "fib.h"
 }
-
+*/
 // File for sandboxing and trying out code
 int main(int argc, char **argv)
 {
+    /*
     printf("%d\n", sumwhile(5));
     printf("%d\n", sumtail(5, 0));
     printf("%d\n", sum(5));
@@ -17,5 +19,7 @@ int main(int argc, char **argv)
     printf("%d\n", sumn(13));
     printf("%d\n", sumn(32));
     printf("%d", fib(10, 0, 1));
+    */
+    printf("%d", 5/2);
     return 0;
 }
